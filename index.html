@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сиқырлы таң — 21 күндік таңғы марафон · 10–30 желтоқсан</title>
+<meta name="description" content="«Сиқырлы таң» — 2026 жылдың ең ауқымды марафоны. 21 күн: ерте тұру әдетін қалыптастырып, таңғы уақытты өзіңізге арнаңыз. 10–30 желтоқсан, онлайн, 10 000 ₸.">
+<meta name="theme-color" content="#173e32">
+<meta property="og:title" content="Сиқырлы таң — 2026 жылдың ең ауқымды марафоны">
+<meta property="og:description" content="21 күндік онлайн таңғы марафон. 10–30 желтоқсан. Қатысу — 10 000 ₸.">
+<meta property="og:image" content="https://sikyrlytan.kz/assets/nature.jpeg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#173e32; --green-2:#1f5141; --green-soft:#e8efe9;
+    --dawn:#f2a65a; --dawn-2:#f7c873; --rose:#f4d8c8;
+    --cream:#fbf6ef; --ink:#14231d; --muted:#5d6b64; --line:#e3ddd2;
+    --radius:22px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:Lora,Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+  h2{font-size:clamp(28px,4.4vw,44px);margin-bottom:14px}
+  h2 em,h1 em{font-style:italic;color:var(--dawn)}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--green-2)}
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--dawn);border-radius:2px}
+  .lead{color:var(--muted);font-size:17px;max-width:620px}
+  section{padding:84px 0}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .15s ease,box-shadow .15s ease,background .15s;cursor:pointer;border:0}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-dawn{background:linear-gradient(135deg,var(--dawn),var(--dawn-2));color:#2b1a07;box-shadow:0 10px 28px -10px rgba(242,166,90,.8)}
+  .btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.35);color:#fff}
+  .btn-green{background:var(--green);color:#fff}
+  .btn-wa{background:#25d366;color:#fff}
+  .btn-kaspi{background:#f14635;color:#fff}
+  .btn-kaspi img{height:20px;width:auto;background:#fff;border-radius:5px;padding:2px 4px}
+
+  /* header */
+  header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .25s,box-shadow .25s}
+  header.scrolled{background:rgba(23,62,50,.92);backdrop-filter:blur(10px);box-shadow:0 6px 24px -12px rgba(0,0,0,.4)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;color:#fff}
+  .brand{font-family:Lora,serif;font-weight:600;font-size:21px;display:flex;align-items:center;gap:10px}
+  .brand .sun{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 50% 60%,var(--dawn-2),var(--dawn));box-shadow:0 0 18px rgba(247,200,115,.7)}
+  .nav ul{display:flex;gap:28px;list-style:none;font-size:15px;opacity:.9}
+  .nav ul a:hover{color:var(--dawn-2)}
+  .nav .btn{padding:10px 20px;font-size:14px}
+  @media(max-width:860px){.nav ul{display:none}}
+
+  /* hero */
+  .hero{position:relative;background:radial-gradient(120% 80% at 80% 110%,#e9874a 0%,#b2603c 18%,#3a4a3c 45%,var(--green) 70%);color:#fff;padding:120px 0 80px;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-10%;bottom:-38%;width:70vw;max-width:820px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(247,200,115,.55),rgba(242,166,90,0) 62%);pointer-events:none}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .tag{display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);font-size:13px;font-weight:500;margin-bottom:22px}
+  .hero h1{font-size:clamp(46px,7.4vw,84px);font-weight:600}
+  .subtitle{font-family:Lora,serif;font-style:italic;font-size:clamp(21px,2.8vw,28px);color:var(--dawn-2);margin:10px 0 20px}
+  .hero p.desc{font-size:18px;opacity:.88;max-width:540px;margin-bottom:30px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+  .badge{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:12px 14px;flex:1;min-width:0}
+  @media(max-width:420px){.badge b{font-size:16px}.badge span{font-size:11px}}
+  .badge b{display:block;font-size:19px;font-family:Lora,serif}
+  .badge span{font-size:12.5px;opacity:.75}
+  .hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:28px;padding:14px;backdrop-filter:blur(6px)}
+  .hero-card img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;width:100%}
+  .hero-card .who{display:flex;justify-content:space-between;align-items:center;padding:14px 8px 4px;gap:10px}
+  .hero-card .who b{font-family:Lora,serif;font-size:19px;display:block}
+  .hero-card .who small{opacity:.75}
+  .hero-card .who a{font-size:13px;background:rgba(255,255,255,.14);padding:7px 12px;border-radius:999px;white-space:nowrap}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:100px}}
+
+  /* countdown */
+  .countdown{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;align-items:center}
+  .countdown .lbl{font-size:13px;opacity:.75;margin-right:4px}
+  .cd{background:rgba(0,0,0,.22);border-radius:12px;padding:8px 12px;text-align:center;min-width:62px}
+  .cd b{display:block;font-size:22px;font-family:Lora,serif}
+  .cd span{font-size:11px;opacity:.7}
+
+  /* pain */
+  .pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+  .pain{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .pain .ic{font-size:26px;width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--rose);margin-bottom:16px}
+  .pain p{color:var(--muted);font-size:15.5px}
+  .pain p strong{color:var(--ink);display:block;font-size:17px;margin-bottom:4px}
+  @media(max-width:960px){.pain-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.pain-grid{grid-template-columns:1fr}}
+
+  /* about marathon */
+  .about-m{background:#fff}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .photo-stack{position:relative}
+  .photo-stack img{border-radius:var(--radius);object-fit:cover;width:100%}
+  .photo-stack .p1{aspect-ratio:4/5;width:78%}
+  .photo-stack .p2{position:absolute;right:0;bottom:-30px;width:48%;aspect-ratio:1;border:6px solid #fff;box-shadow:0 20px 40px -20px rgba(0,0,0,.35)}
+  .checks{list-style:none;margin-top:26px;display:grid;gap:14px}
+  .checks li{display:flex;gap:14px;align-items:flex-start;font-size:16.5px}
+  .checks li::before{content:"✓";flex:none;width:28px;height:28px;border-radius:50%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-weight:700;font-size:14px;margin-top:1px}
+  @media(max-width:860px){.split{grid-template-columns:1fr;gap:56px}}
+
+  /* program */
+  .program{background:var(--green);color:#fff;position:relative;overflow:hidden}
+  .program .eyebrow{color:var(--dawn-2)}
+  .program .lead{color:rgba(255,255,255,.75)}
+  .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+  .stage{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:28px;position:relative}
+  .stage .num{font-family:Lora,serif;font-size:15px;color:var(--dawn-2);letter-spacing:.04em}
+  .stage h3{font-size:24px;margin:8px 0 10px}
+  .stage p{opacity:.8;font-size:15.5px}
+  .stage .chip{display:inline-block;margin-top:16px;font-size:12.5px;padding:6px 12px;border-radius:999px;background:rgba(247,200,115,.16);color:var(--dawn-2)}
+  .bar{margin-top:34px;height:10px;border-radius:999px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}
+  .bar i{position:absolute;inset:0;background:linear-gradient(90deg,var(--dawn),var(--dawn-2) 14%,#9fc9a9 50%,#cfe6d4)}
+  .bar-labels{display:flex;justify-content:space-between;font-size:12.5px;opacity:.7;margin-top:8px}
+  @media(max-width:860px){.timeline{grid-template-columns:1fr}}
+
+  /* chats */
+  .chats{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}
+  .chat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;gap:18px}
+  .chat .ic{flex:none;width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:26px;background:var(--green-soft)}
+  .chat h3{font-size:21px;margin-bottom:6px}
+  .chat p{color:var(--muted);font-size:15.5px}
+  @media(max-width:760px){.chats{grid-template-columns:1fr}}
+
+  /* host */
+  .host{background:#fff}
+  .host .photo img{border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;width:100%}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+  .gallery img{border-radius:14px;aspect-ratio:1;object-fit:cover;width:100%}
+  .ig{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:600;color:var(--green)}
+  .ig:hover{color:var(--dawn)}
+
+  /* price */
+  .price-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;margin-top:40px;align-items:stretch}
+  .price-card{background:var(--green);color:#fff;border-radius:28px;padding:36px;position:relative;overflow:hidden}
+  .price-card::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(247,200,115,.45),transparent 65%)}
+  .price-card .ribbon{display:inline-block;background:var(--dawn-2);color:#2b1a07;font-weight:700;font-size:12.5px;padding:6px 12px;border-radius:999px;letter-spacing:.03em}
+  .price-card h3{font-size:30px;margin:16px 0 4px}
+  .price-card .dates{opacity:.75}
+  .price{font-family:Lora,serif;font-size:clamp(46px,7vw,64px);font-weight:700;margin:18px 0 6px;color:var(--dawn-2)}
+  .price-card ul{list-style:none;display:grid;gap:10px;margin:18px 0 28px}
+  .price-card li{display:flex;gap:10px;opacity:.92}
+  .price-card li::before{content:"☀";color:var(--dawn-2)}
+  .price-card .btns{display:flex;flex-wrap:wrap;gap:10px;position:relative;z-index:2}
+  .steps-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:36px}
+  .steps-card h3{font-size:24px;margin-bottom:20px}
+  .step{display:flex;gap:16px;padding:16px 0;border-top:1px dashed var(--line)}
+  .step:first-of-type{border-top:0;padding-top:0}
+  .step .n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--rose);display:grid;place-items:center;font-family:Lora,serif;font-weight:700}
+  .step p{color:var(--muted);font-size:15.5px}
+  .step p strong{color:var(--ink);display:block;font-size:16.5px}
+  .note{font-size:13.5px;color:var(--muted);margin-top:18px;background:var(--cream);border-radius:14px;padding:14px 16px}
+  @media(max-width:860px){.price-wrap{grid-template-columns:1fr}}
+
+  /* faq */
+  .faq{max-width:820px;margin:36px auto 0}
+  details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 24px;margin-bottom:12px}
+  summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:24px;line-height:1;color:var(--dawn);transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{color:var(--muted);margin-top:12px}
+
+  /* final */
+  .final{position:relative;color:#fff;text-align:center;padding:110px 0;background:linear-gradient(180deg,rgba(23,62,50,.72),rgba(23,62,50,.9)),url("assets/life.jpeg") center/cover}
+  .final h2{font-size:clamp(32px,5vw,54px)}
+  .final p{opacity:.85;max-width:560px;margin:0 auto 30px;font-size:17px}
+  .final .cta-row{justify-content:center}
+
+  footer{background:#0f2a21;color:rgba(255,255,255,.7);padding:34px 0;font-size:14px}
+  footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
+  footer a:hover{color:var(--dawn-2)}
+
+  /* sticky mobile cta */
+  .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none}
+  .sticky .btn{width:100%}
+
+  @media(max-width:760px){.sticky{display:block}body{padding-bottom:76px}}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="sun"></span>Сиқырлы таң</a>
+    <ul>
+      <li><a href="#about">Марафон туралы</a></li>
+      <li><a href="#program">Бағдарлама</a></li>
+      <li><a href="#host">Жүргізуші</a></li>
+      <li><a href="#join">Қатысу</a></li>
+    </ul>
+    <a href="#join" class="btn btn-dawn">Қатысамын</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">☀ 21 күндік онлайн марафон · қазақ тілінде</span>
+      <h1>Сиқырлы <em>таң</em></h1>
+      <div class="subtitle">2026 жылдың ең ауқымды марафоны</div>
+      <p class="desc">Ерте тұру әдетін қалыптастырып, таңғы уақытты өзіңізге арнаңыз. Жылды тыныштықпен, тәртіппен және өзіңізге деген қамқорлықпен аяқтаңыз.</p>
+      <div class="cta-row">
+        <a href="#join" class="btn btn-dawn">Марафонға қатысамын →</a>
+        <a href="#program" class="btn btn-ghost">Бағдарламаны көру</a>
+      </div>
+      <div class="badges">
+        <div class="badge"><b>10–30 желт.</b><span>өту уақыты</span></div>
+        <div class="badge"><b>21 күн</b><span>онлайн формат</span></div>
+        <div class="badge"><b>10 000 ₸</b><span>қатысу бағасы</span></div>
+      </div>
+      <div class="countdown" id="countdown">
+        <span class="lbl">Стартқа дейін:</span>
+        <div class="cd"><b id="cd-d">0</b><span>күн</span></div>
+        <div class="cd"><b id="cd-h">0</b><span>сағат</span></div>
+        <div class="cd"><b id="cd-m">0</b><span>минут</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="assets/nature.jpeg" alt="Динара Уалина таулы көл жағасында">
+      <div class="who">
+        <div><b>Динара Уалина</b><small>Марафон авторы</small></div>
+        <a href="https://www.instagram.com/sikyrly_tan/" target="_blank" rel="noopener">@sikyrly_tan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Таныс па?</span>
+    <h2>«Ертең ерте тұрамын» <em>дейсіз бе?</em></h2>
+    <p class="lead">Көбіміз таңды асығыспен бастаймыз — ал өзімізге бір минут та қалмайды.</p>
+    <div class="pain-grid">
+      <div class="pain reveal"><div class="ic">⏰</div><p><strong>Будильникті қайта-қайта кейінге қоясыз</strong>Таң асығыс, күн шашыраңқы басталады.</p></div>
+      <div class="pain reveal"><div class="ic">🌀</div><p><strong>Өзіңізге уақыт жоқ</strong>Күні бойы басқалар үшін жүгіріп, өзіңізді ұмытасыз.</p></div>
+      <div class="pain reveal"><div class="ic">📵</div><p><strong>Таң телефоннан басталады</strong>Көз ашқаннан ленталар мен хабарламалар.</p></div>
+      <div class="pain reveal"><div class="ic">🔁</div><p><strong>Бастайсыз да, тастайсыз</strong>Жалғыз өзіңіз әдетті ұстап тұру қиын.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT MARATHON -->
+<section class="about-m" id="about">
+  <div class="wrap split">
+    <div class="photo-stack reveal">
+      <img class="p1" src="assets/meadow.jpeg" alt="Динара тау шалғынында">
+      <img class="p2" src="assets/winter.jpeg" alt="Қысқы орман жолы">
+    </div>
+    <div>
+      <span class="eyebrow">Марафон туралы</span>
+      <h2>«Сиқырлы таң» <em>деген не?</em></h2>
+      <p class="lead">Бұл — 21 күн бойы бірге ерте тұрып, таңды өзіңізге арнауға үйрететін онлайн марафон. Жалғыз емес — қауымдастықпен, қолдаумен.</p>
+      <ul class="checks">
+        <li>Ерте тұру әдетін біртіндеп қалыптастырасыз</li>
+        <li>Таңғы уақытты өзіңізге — ойға, денеге, жоспарға арнайсыз</li>
+        <li>Күнделікті тапсырмалар мен медитациялар</li>
+        <li>Жүргізушіден жеке кері байланыс аласыз</li>
+        <li>Жаңа жылды жаңа әдетпен қарсы аласыз</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="program" id="program">
+  <div class="wrap">
+    <span class="eyebrow">Бағдарлама</span>
+    <h2>21 күндік жолыңыз: <em>марафон қалай өтеді?</em></h2>
+    <p class="lead">10 желтоқсаннан 30 желтоқсанға дейін — үш кезең, бір мақсат.</p>
+    <div class="timeline">
+      <div class="stage reveal">
+        <div class="num">01 · 1–3 күн</div>
+        <h3>Таңды бірге қарсы аламыз</h3>
+        <p>Алғашқы үш күн Instagram-да тікелей эфир сағат 06:00-де өтеді.</p>
+        <span class="chip">Live · @sikyrly_tan · 06:00</span>
+      </div>
+      <div class="stage reveal">
+        <div class="num">02 · 4-күннен бастап</div>
+        <h3>Әдетті күн сайын бекітеміз</h3>
+        <p>Күнделікті тапсырмалар. Барлық ақпарат WhatsApp-тағы ақпараттық чатта.</p>
+        <span class="chip">Күнделікті тапсырмалар</span>
+      </div>
+      <div class="stage reveal">
+        <div class="num">03 · 11-күннен бастап</div>
+        <h3>Өзіңізге тереңірек үңілеміз</h3>
+        <p>Бағдарламаға медитация мен жеке кері байланыс қосылады.</p>
+        <span class="chip">Медитация + жеке кері байланыс</span>
+      </div>
+    </div>
+    <div class="bar"><i></i></div>
+    <div class="bar-labels"><span>10 желтоқсан · старт</span><span>11-күн</span><span>30 желтоқсан · мәре</span></div>
+  </div>
+</section>
+
+<!-- CHATS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Байланыс</span>
+    <h2>Барлық ақпарат <em>бір жерде</em></h2>
+    <p class="lead">Марафон кезінде екі WhatsApp чаты жұмыс істейді.</p>
+    <div class="chats">
+      <div class="chat reveal"><div class="ic">📢</div><div><h3>Ақпараттық чат</h3><p>Эфир сілтемелері, күнделікті тапсырмалар және марафонның барлық жаңалықтары.</p></div></div>
+      <div class="chat reveal"><div class="ic">💬</div><div><h3>Кері байланыс чаты</h3><p>Тапсырмаларды бөлісіп, сұрақ қойып, жүргізушіден жауап алатын орын.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOST -->
+<section class="host" id="host">
+  <div class="wrap split">
+    <div class="photo reveal"><img src="assets/dinara.jpeg" alt="Динара Уалина"></div>
+    <div>
+      <span class="eyebrow">Жүргізуші</span>
+      <h2>Динара <em>Уалина</em></h2>
+      <p class="lead">«Сиқырлы таң» марафонының авторы. Таңды өзіне арнау өмірді қалай өзгертетінін өз тәжірибесінен біледі және мұны басқаларға жеңіл әрі жылы атмосферада үйретеді.</p>
+      <div class="gallery">
+        <img src="assets/studio.jpeg" alt="Динара студияда">
+        <img src="assets/travel.jpeg" alt="Саяхат">
+        <img src="assets/winter.jpeg" alt="Қысқы табиғат">
+      </div>
+      <a class="ig" href="https://www.instagram.com/sikyrly_tan/" target="_blank" rel="noopener">Instagram · @sikyrly_tan →</a>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN / PRICE -->
+<section id="join">
+  <div class="wrap">
+    <span class="eyebrow">Қатысу</span>
+    <h2>Қатысуға <em>дайынсыз ба?</em></h2>
+    <p class="lead">Орныңызды қазір брондаңыз — старт 10 желтоқсанда.</p>
+    <div class="price-wrap">
+      <div class="price-card reveal">
+        <span class="ribbon">2026 ЖЫЛДЫҢ ЕҢ АУҚЫМДЫ МАРАФОНЫ</span>
+        <h3>«Сиқырлы таң»</h3>
+        <div class="dates">10–30 желтоқсан · 21 күн · онлайн</div>
+        <div class="price">10 000 ₸</div>
+        <ul>
+          <li>3 тікелей эфир сағат 06:00-де</li>
+          <li>Күнделікті тапсырмалар</li>
+          <li>Медитациялар</li>
+          <li>Жеке кері байланыс</li>
+          <li>Ақпараттық және кері байланыс чаттары</li>
+        </ul>
+        <div class="btns">
+          <a class="btn btn-kaspi" href="https://pay.kaspi.kz/pay/jsydfo8a" target="_blank" rel="noopener"><img src="assets/kaspi-logo.png" alt="">Kaspi арқылы төлеу</a>
+          <a class="btn btn-ghost" id="wa-ask" href="https://wa.me/77029016480" target="_blank" rel="noopener">Сұрақ қою</a>
+        </div>
+      </div>
+      <div class="steps-card reveal">
+        <h3>Қалай қатысамын?</h3>
+        <div class="step"><div class="n">1</div><p><strong>Kaspi арқылы төлеңіз</strong>«Kaspi арқылы төлеу» батырмасын басып, 10 000 ₸ төлеңіз.</p></div>
+        <div class="step"><div class="n">2</div><p><strong>Чекті WhatsApp-қа жіберіңіз</strong>Төлем чегін +7 702 901 64 80 нөміріне жіберіңіз.</p></div>
+        <div class="step"><div class="n">3</div><p><strong>Чатқа қосыласыз</strong>Сізді марафон чаттарына қосып, барлық ақпаратты жібереміз.</p></div>
+        <a class="btn btn-wa" id="wa-paid" href="https://wa.me/77029016480" target="_blank" rel="noopener" style="width:100%;margin-top:10px">Төледім — чекті жіберу</a>
+        <div class="note">Әдет әр адамда әртүрлі қарқынмен қалыптасады — нәтиже күнделікті қатысуыңызға байланысты.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div style="text-align:center"><span class="eyebrow">Сұрақтар</span><h2>Жиі қойылатын <em>сұрақтар</em></h2></div>
+    <div class="faq">
+      <details><summary>Марафон қашан басталады?</summary><p>10 желтоқсанда басталып, 30 желтоқсанда аяқталады — барлығы 21 күн.</p></details>
+      <details><summary>Марафон қайда өтеді?</summary><p>Толығымен онлайн: алғашқы эфирлер Instagram-да (@sikyrly_tan), ал тапсырмалар мен ақпарат WhatsApp чаттарында.</p></details>
+      <details><summary>Қалай қатысамын?</summary><p>Kaspi арқылы 10 000 ₸ төлеп, чекті WhatsApp-қа (+7 702 901 64 80) жіберіңіз. Сізді марафон чаттарына қосамыз.</p></details>
+      <details><summary>21 күнде әдет міндетті түрде қалыптаса ма?</summary><p>Марафон әдетті қалыптастыруға көмектеседі, бірақ әркімнің қарқыны әртүрлі. Нәтиже күнделікті қатысуыңыз бен тапсырмаларды орындауыңызға байланысты.</p></details>
+      <details><summary>Жазбалар мен тапсырмаларға қанша уақыт кетеді?</summary><p>Жазбаларға қолжетімділік мерзімі мен тапсырмалардың уақыты туралы нақты ақпаратты қатысар алдында WhatsApp арқылы сұрап алыңыз.</p></details>
+      <details><summary>Басқа сұрақтарым болса ше?</summary><p>WhatsApp-қа жазыңыз: <a href="https://wa.me/77029016480" style="color:var(--green);font-weight:600">+7 702 901 64 80</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>Жаңа жылды <em>жаңа таңмен</em> қарсы алыңыз</h2>
+    <p>21 күн — өзіңізге уақыт бөлуді үйренуге жеткілікті. Старт 10 желтоқсанда.</p>
+    <div class="cta-row">
+      <a href="#join" class="btn btn-dawn">Марафонға қатысамын →</a>
+      <a href="https://wa.me/77029016480" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp: +7 702 901 64 80</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <span>© 2026 «Сиқырлы таң» · Динара Уалина</span>
+    <span><a href="https://www.instagram.com/sikyrly_tan/" target="_blank" rel="noopener">Instagram · @sikyrly_tan</a> &nbsp;·&nbsp; <a href="https://wa.me/77029016480" target="_blank" rel="noopener">WhatsApp</a></span>
+  </div>
+</footer>
+
+
+<div class="sticky"><a href="#join" class="btn btn-dawn">Қатысамын</a></div>
+
+<script>
+  // images: fall back to live site assets when previewed elsewhere
+  document.querySelectorAll('img').forEach(function(img){
+    img.addEventListener('error',function(){
+      if(!img.dataset.fb){img.dataset.fb=1;img.src='https://sikyrlytan.kz/'+img.getAttribute('src');}
+    },{once:false});
+    if(img.complete && img.naturalWidth===0 && img.getAttribute('src').indexOf('http')!==0){img.dataset.fb=1;img.src='https://sikyrlytan.kz/'+img.getAttribute('src');}
+  });
+  if(location.hostname.indexOf('sikyrlytan.kz')===-1){
+    document.querySelector('.final').style.backgroundImage='linear-gradient(180deg,rgba(23,62,50,.72),rgba(23,62,50,.9)),url("https://sikyrlytan.kz/assets/life.jpeg")';
+  }
+
+  // WhatsApp prefilled messages
+  var wa='https://wa.me/77029016480?text=';
+  document.getElementById('wa-paid').href=wa+encodeURIComponent('Сәлеметсіз бе! «Сиқырлы таң» марафонына 10 000 ₸ төледім. Чекті жіберіп отырмын.');
+  document.getElementById('wa-ask').href=wa+encodeURIComponent('Сәлеметсіз бе! «Сиқырлы таң» марафоны туралы сұрағым бар.');
+
+  // header on scroll
+  var h=document.getElementById('top');
+  addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>30)});
+
+  // countdown to 10 Dec 2026 06:00 (Almaty, UTC+5)
+  var start=new Date('2026-12-10T06:00:00+05:00').getTime();
+  function tick(){
+    var d=start-Date.now(), el=document.getElementById('countdown');
+    if(d<=0){el.innerHTML='<span class="lbl">☀ Марафон басталды!</span>';return;}
+    document.getElementById('cd-d').textContent=Math.floor(d/864e5);
+    document.getElementById('cd-h').textContent=Math.floor(d%864e5/36e5);
+    document.getElementById('cd-m').textContent=Math.floor(d%36e5/6e4);
+  }
+  tick(); setInterval(tick,30000);
+
+  // reveal on scroll
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
